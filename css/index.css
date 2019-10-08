@@ -1,3 +1,405 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width:900px;
+	margin: auto;
+	
+	
+}
+header {
+	margin-top:15px;
+	margin-left:35px;
+	margin-bottom:-180px;
+	display:flex;
+	justify-content: center;
+	
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav a {
+	padding:10px 40px;
+	color:lightgrey;
+	text-decoration:none;
+	
+}
+
+body {
+    background:white;
+}
+
+.first {
+	display: flex;
+	justify-items: center;
+	
+}
+
+.first-img{
+	margin-top:25%;
+	margin-bottom:5%;
+	margin-left:30%;
+}
+
+.logo {
+	margin:3% 5%;
+	padding-left:30px;
+	
+	
+}
+.logo2 {
+    display: flex;
+    display: none;
+}
+
+.first h1 {
+	font-size:85px;
+	text-align:center;
+	display: flex;
+	align-self: flex-end;
+	margin-bottom:11%;
+
+	
+}
+
+.startButton {
+	display:flex;
+	flex-direction: row-reverse;
+	align-self: flex-end;
+	background:white;
+	border:1px solid black;
+	padding:5px 25px 5px 25px;
+	margin-bottom: 7%;
+	margin-left:-25%;
+}
+
+.topS {
+	display:flex;
+	width:100%;
+	align-items: space-evenly;
+	margin-bottom:30px;
+	
+	
+}
+
+.bottomS{
+	display:flex;
+	width: 100%;
+	margin-top:30px;
+	margin-bottom: 40px;
+	justify-content: space-between;
+	
+}
+
+.bottomP {
+	width:32%;
+}
+
+/* .services {
+	margin-left:25px;
+	width:32%;
+}
+
+.product {
+	margin-left:25px;
+	width:32%;
+}
+
+.vision {
+	margin-left:25px;
+	width:32%;
+} */
+
+
+.borderLine {
+	border-bottom: 2px solid black;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.firstBorderLine {
+	border-bottom:2px solid black;
+	margin-bottom: 80px;
+	
+}
+
+.copywrite {
+	margin:50px 0px;
+	text-align:center;
+}
+
+/*Media Quarry 800 Styles*/ 
+* {
+    max width: 100%;
+}
+
+@media (max-width: 800px) {
+header {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.img {
+      display: flex;
+      
+    }
+.logo {
+      background: white;
+      padding: 0 12% 0% 0%;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+    }
+nav {
+      width: 90%;
+      background: none;
+      margin: 0 6% 0 -10%;
+      /* padding: 5% 80%; */
+    }
+.first-img{
+        background: green;
+        display: none;
+    }
+.first {
+        display: flex;
+        align-items: center;
+        margin-top: 25%;
+        padding: 6% 12% 0% 0%;
+        justify-content: center;
+        background: none;
+    }
+
+ .first h1{
+     padding-bottom:15px;
+ }   
+.startButton {
+    background: white;
+    margin-left: -40%;
+    }
+
+.topP {
+       
+        padding: 2%;
+        /* height: 23%; */
+        width: 100%;
+        /* margin: 0% 5% 0% 3%; */
+        
+    }
+.topS {
+    width: 80%;
+    margin: 3% 0% 1% 3%; 
+}
+
+
+.bottomP {
+    width: 100%;
+    margin-right: 90px;
+    margin: 0 1% 1% 2%;
+}
+.bottomS {
+    width: 100%;
+    margin: 0 -5%;
+
+    }
+.middle-img {
+    padding: 1%;
+    width: 80%;
+    margin: 0 4%;
+    }
+
+.contact {
+        padding: 3%;
+        width: 80%;
+        margin: 0 3%;
+    }
+
+.firstBorderLine {
+        padding: 5% 2% 3% 4%;
+        width: 80%;
+        margin: 0 4%;
+    }
+.borderLine {
+        padding: 2%;
+        width: 78%;
+        margin: 0 6%;
+        }
+    }
+
+/* 500px*/
+@media (max-width: 500px) {
+
+* {
+    max width: 100%;
+}
+
+body {
+        background: white;
+    }
+
+.first {
+    margin: 40% 3% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+ .startButton {
+    margin: 0% 35% 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }   
+.logo {
+    margin: 0% 35% 1% 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+nav {
+    margin: 0% 50% 0% 0%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-decoration:none;
+    border-bottom:1px solid black;
+   
+   
+	
+}
+
+.topS {
+    width: 55%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 4% 2% 3% 0%;
+    display: flex;
+    padding-left: 5%;
+	
+	
+}
+
+.middle-img {
+    width: 49%;
+    margin: 0% 0% 0% 4%;
+	display: flex;
+    flex-direction: column;
+    
+    }
+
+.bottomS{
+    width: 110%;
+	display: flex;
+    flex-direction: column;
+	
+}
+
+.bottomP {
+    
+    margin: 0% 2% 8% 0%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.firstBorderLine {
+    padding: 5% 2% 3% 4%;
+    width: 50%;
+    margin: 0 6%;
+}
+.borderLine {
+    padding: 2%;
+    width: 50%;
+    margin: 0 6%;
+    }
+}
+.contact
+{
+    padding-left: 3%;
+}
+
 
 
